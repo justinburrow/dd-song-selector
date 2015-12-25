@@ -80,6 +80,31 @@ input[type=checkbox]:focus, input[type=text]:focus {
   outline: none;
 }
 
+.selected-songs {
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  transition: width 0.2s ease-out, padding 0.1s ease-out;
+  li {
+    font-weight: bold;
+    margin-bottom: 10px;
+    &:before {
+      content: '- '
+    }
+  }
+  &.expand {
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    width: 80%;
+    transition: width 0.2s ease-out;
+    padding: 50px;
+  }
+}
+
 @media screen and (max-width: 736px) {
   .container {
     padding: 0 5%;

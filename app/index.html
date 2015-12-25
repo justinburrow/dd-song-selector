@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="ddSongSelectApp">
+  <body data-ng-app="ddSongSelectApp">
     
-    <div class="header">
+    <div class="header" data-ng-controller="MainCtrl as main">
       <div class="container">
         <div class="button visible-xs">
           <button class="options" aria-label="filtering options">
@@ -23,7 +23,7 @@
           </button>
         </div>
         <h1>Dallas &amp; Doll</h1>
-        <button class="dt-review hidden-xs">Review My Song List</button>
+        <button class="dt-review hidden-xs" data-ng-click="main.reviewPanel()">Review My Song List</button>
         <div class="button visible-xs">
           <button class="review" aria-label="review song selection">
             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
@@ -57,6 +57,7 @@
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/directives/header-offset.js"></script>
         <script src="scripts/filters/inarray.js"></script>
+        <script src="scripts/directives/selectedsongs.js"></script>
         <!-- endbuild -->
 </body>
 </html>

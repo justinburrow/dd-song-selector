@@ -4,7 +4,6 @@ angular.module 'ddSongSelectApp'
   .controller 'MainCtrl', ($http) ->
     
     vm = @
-    window.MAIN = vm
     vm.sortType = 'song.title'
     vm.searchQuery = 'default'
     vm.genreFilter = []
@@ -61,7 +60,5 @@ angular.module 'ddSongSelectApp'
           return i
         i++
       -1
-    
-    
     
     return
