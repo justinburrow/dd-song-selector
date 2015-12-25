@@ -17,11 +17,21 @@
     
     <div class="header">
       <div class="container">
-        <h1>Dallas &amp; Doll Song List</h1>
+        <div class="button visible-xs">
+          <button class="options" aria-label="filtering options">
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+          </button>
+        </div>
+        <h1>Dallas &amp; Doll</h1>
+        <div class="button visible-xs">
+          <button class="review" aria-label="review song selection">
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+          </button>
+        </div>
       </div>
     </div>
 
-    <div class="container">
+    <div header-offset class="container holder">
     <div ng-view=""></div>
     </div>
 
@@ -44,6 +54,7 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/directives/header-offset.js"></script>
         <!-- endbuild -->
 </body>
 </html>

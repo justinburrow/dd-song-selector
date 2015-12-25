@@ -1,6 +1,7 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "compass/reset";
 // endbower
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
 
@@ -8,8 +9,61 @@ body {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.header {
+  background: black;
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.5;
+  padding: 15px 0;
+  vertical-align: middle;
+  position: fixed;
+  width: 100%;
+  button {
+    border-radius: 5px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.holder {
+  padding-top: 20px;
+}
+
+.song-list thead td {
+  cursor: pointer;
+  span.glyphicon {
+    top: 3px;
+    left: 3px;
+  }
+}
+
 @media screen and (max-width: 736px) {
-  
+  .container {
+    padding: 0 5%;
+  }
+  .header {
+    padding: 5px 0;
+    box-shadow: 0 0 5px #000;
+    .button {
+      width: 15%;
+      overflow: hidden;
+      display: inline-block !important;
+      span {
+        vertical-align: middle;
+        top: -2px;
+      }
+    }
+    h1 {
+      text-transform: uppercase;
+      font-size: 20px;
+      margin: 0 3%;
+      width: 58%;
+      display: inline-block;
+      text-align: center;
+    }
+  }
 }
 
 
