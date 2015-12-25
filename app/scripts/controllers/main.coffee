@@ -4,20 +4,14 @@ angular.module 'ddSongSelectApp'
   .controller 'MainCtrl', ($http) ->
     
     vm = @
+    window.MAIN = vm
     vm.sortType = 'song.title'
     vm.searchQuery = 'default'
     vm.genreFilter = []
     vm.tempoFilter = []
+    vm.selectedSongs = []
     
-    vm.clickFilter = (name, type) ->
-      #name = name.toLowerCase()
-      #type = type.toLowerCase()
-      filterArray = eval('vm.'+type+'Filter')
-      index = filterArray.indexOf(name)
-      if index == -1
-        filterArray.push(name)
-      else filterArray.splice(index, 1)
-
+    #Get JSON data, setup arrays to build filters from key values
     $http.get('songs/songs.json').success (data) ->
       vm.songList = data
   
@@ -39,6 +33,35 @@ angular.module 'ddSongSelectApp'
           vm.songTempos.push(tempo)
         i++
 
-    return
+
+    #Grab the filtering type and push it to the appropriate array
+    vm.clickFilter = (name, type) ->
+      filterArray = eval('vm.'+type+'Filter')
+      index = filterArray.indexOf(name)
+      if index == -1
+        filterArray.push(name)
+      else filterArray.splice(index, 1)
+    
+    #Grab song properties from ng-repeat object, create new JSON object, push to selectedSongs if it doesn't exist, splice if it does
+    vm.selectSong = (song) ->
+      id = song.song.ID
+      selectedIndex = vm.getSelectedSongIndex(id)
+      if selectedIndex == -1
+        selectedSong = {"id": id, "title": song.song.title, "artist": song.song.artist, "genre": song.song.genre, "tempo": song.song.tempo}
+        vm.selectedSongs.push(selectedSong)
+      else
+        vm.selectedSongs.splice(selectedIndex, 1)
 
       
+    #Determine if selected song is in selectedSongs array by ID key
+    vm.getSelectedSongIndex = (val) ->
+      i = 0
+      while i < vm.selectedSongs.length
+        if vm.selectedSongs[i].id == val
+          return i
+        i++
+      -1
+    
+    
+    
+    return

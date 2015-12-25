@@ -1,20 +1,22 @@
-<div class="col-sm-3 filter-sort hidden-xs">
-  <h4>Narrow The List</h4>
-  <div class="search">
-    <input type="text" value="" placeholder="Search..." ng-model="searchSongs">
-  </div>
-  <div class="filter">
-    <h4>Filter by Genre</h4>
-    {{main.genreInclude}}
-    <ul>
-      <li data-ng-repeat="genre in main.songGenres"><input type="checkbox" data-ng-click="main.clickFilter(genre, 'genre')">{{genre}}</li>
-    </ul>
-  </div>
-  <div class="filter">
-    <h4>Filter by Tempo</h4>
-    <ul>
-      <li data-ng-repeat="tempo in main.songTempos"><input type="checkbox" data-ng-click="main.clickFilter(tempo, 'tempo')">{{tempo}}</li>
-    </ul>
+<div class="col-sm-3 hidden-xs">
+  <div class="filter-sort">
+    <h4>Narrow The List</h4>
+    <div class="search">
+      <input type="text" value="" placeholder="Search..." ng-model="searchSongs">
+    </div>
+    <div class="filter">
+      <h4>Filter by Genre</h4>
+      {{main.genreInclude}}
+      <ul>
+        <li data-ng-repeat="genre in main.songGenres"><input type="checkbox" data-ng-click="main.clickFilter(genre, 'genre')">{{genre}}</li>
+      </ul>
+    </div>
+    <div class="filter">
+      <h4>Filter by Tempo</h4>
+      <ul>
+        <li data-ng-repeat="tempo in main.songTempos"><input type="checkbox" data-ng-click="main.clickFilter(tempo, 'tempo')">{{tempo}}</li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -45,7 +47,7 @@
     </thead>
       <tr data-ng-repeat="song in main.songList.songlist.songs | orderBy: main.sortType | filter: searchSongs | inArray:main.genreFilter:'genre' | inArray:main.tempoFilter:'tempo'">
         <td>
-          <input type="checkbox" name="selectedSongs[]" value="{{song.song.title}} - {{song.song.artist}}">
+          <input type="checkbox" data-ng-click="main.selectSong(song)">
         </td>
         <td>
           <h2>{{song.song.title}}</h2>
@@ -62,4 +64,10 @@
       </tr>
     </thead>
   </table>
+</div>
+
+<div class="selected-songs">
+  <ul>
+    <li data-ng-repeat="song in main.selectedSongs">{{song.title}}</li>
+  </ul>
 </div>

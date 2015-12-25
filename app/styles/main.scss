@@ -20,12 +20,23 @@ body {
   position: fixed;
   z-index: 100;
   width: 100%;
+  h1 {
+    float: left;
+  }
   button {
     border-radius: 5px;
     width: 100%;
     padding: 0;
     margin: 0;
   }
+}
+
+button.dt-review {
+  font-size: 14px;
+  width: auto;
+  padding: 10px;
+  float: right;
+  border: none;
 }
 
 .holder {
@@ -63,6 +74,10 @@ body {
   td {
     text-transform: capitalize;
   } 
+}
+
+input[type=checkbox]:focus, input[type=text]:focus {
+  outline: none;
 }
 
 @media screen and (max-width: 736px) {
