@@ -10,8 +10,8 @@ angular.module 'ddSongSelectApp'
     vm.tempoFilter = []
     
     vm.clickFilter = (name, type) ->
-      name = name.toLowerCase()
-      type = type.toLowerCase()
+      #name = name.toLowerCase()
+      #type = type.toLowerCase()
       filterArray = eval('vm.'+type+'Filter')
       index = filterArray.indexOf(name)
       if index == -1

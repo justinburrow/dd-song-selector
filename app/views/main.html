@@ -43,9 +43,9 @@
         </td>
       </tr>
     </thead>
-      <tr data-ng-repeat="song in main.songList.songlist.songs | orderBy: main.sortType | filter: searchSongs">
+      <tr data-ng-repeat="song in main.songList.songlist.songs | orderBy: main.sortType | filter: searchSongs | inArray:main.genreFilter:'genre' | inArray:main.tempoFilter:'tempo'">
         <td>
-          <input type="checkbox" name="selectedSongs[]" value="{{song.title}} - {{song.artist}}">
+          <input type="checkbox" name="selectedSongs[]" value="{{song.song.title}} - {{song.song.artist}}">
         </td>
         <td>
           <h2>{{song.song.title}}</h2>
