@@ -1,43 +1,65 @@
-<table class="table table-striped song-list">
-  <thead>
-    <tr>
-      <td>
-        
-      </td>
-      <td ng-click="main.sortType = 'song.title'">
-        Title
-        <span ng-show="main.sortType == 'song.title'" class="glyphicon glyphicon-triangle-bottom"></span>
-      </td>
-      <td ng-click="main.sortType = 'song.artist'">
-        Artist
-        <span ng-show="main.sortType == 'song.artist'" class="glyphicon glyphicon-triangle-bottom"></span>
-      </td>
-      <td class="hidden-xs" ng-click="main.sortType = 'genre'">
-        Genre
-        <span ng-show="main.sortType == 'song.genre'" class="glyphicon glyphicon-triangle-bottom"></span>
-      </td>
-      <td class="hidden-xs" ng-click="main.sortType = 'song.tempo'">
-        Tempo
-        <span ng-show="main.sortType == 'song.tempo'" class="glyphicon glyphicon-triangle-bottom"></span>
-      </td>
-    </tr>
-    <tr data-ng-repeat="song in main.songList.songlist.songs | orderBy:main.sortType">
-      <td>
-        <input type="checkbox" name="selectedSongs[]" value="{{song.title}} - {{song.artist}}">
-      </td>
-      <td>
-        {{song.song.title}}
-      </td>
-      <td>
-        {{song.song.artist}}
-      </td>
-      <td class="hidden-xs">
-        {{song.song.genre}}
-      </td>
-      <td class="hidden-xs">
-        {{song.song.tempo}}
-      </td>
-    </tr>
-  </thead>
-</table>
+<div class="col-sm-3 filter-sort hidden-xs">
+  <h4>Narrow The List</h4>
+  <div class="search">
+    <input type="text" value="" placeholder="Search..." ng-model="searchSongs">
+  </div>
+  <div class="filter">
+    <h4>Filter by Genre</h4>
+    {{main.genreInclude}}
+    <ul>
+      <li data-ng-repeat="genre in main.songGenres"><input type="checkbox" data-ng-click="main.clickFilter(genre, 'genre')">{{genre}}</li>
+    </ul>
+  </div>
+  <div class="filter">
+    <h4>Filter by Tempo</h4>
+    <ul>
+      <li data-ng-repeat="tempo in main.songTempos"><input type="checkbox" data-ng-click="main.clickFilter(tempo, 'tempo')">{{tempo}}</li>
+    </ul>
+  </div>
+</div>
 
+<div class="col-sm-9 col-sm-offset-3 col-xs-12">
+  <table class="table table-striped song-list">
+    <thead>
+      <tr>
+        <td>
+          <!-- don't delete - spacer for the checkbox column -->
+        </td>
+        <td data-ng-click="main.sortType = 'song.title'">
+          Title
+          <span data-ng-show="main.sortType == 'song.title'" class="glyphicon glyphicon-triangle-bottom"></span>
+        </td>
+        <td data-ng-click="main.sortType = 'song.artist'">
+          Artist
+          <span data-ng-show="main.sortType == 'song.artist'" class="glyphicon glyphicon-triangle-bottom"></span>
+        </td>
+        <td class="hidden-xs" data-ng-click="main.sortType = 'song.genre'">
+          Genre
+          <span data-ng-show="main.sortType == 'song.genre'" class="glyphicon glyphicon-triangle-bottom"></span>
+        </td>
+        <td class="hidden-xs" data-ng-click="main.sortType = 'song.tempo'">
+          Tempo
+          <span data-ng-show="main.sortType == 'song.tempo'" class="glyphicon glyphicon-triangle-bottom"></span>
+        </td>
+      </tr>
+    </thead>
+      <tr data-ng-repeat="song in main.songList.songlist.songs | orderBy: main.sortType | filter: searchSongs">
+        <td>
+          <input type="checkbox" name="selectedSongs[]" value="{{song.title}} - {{song.artist}}">
+        </td>
+        <td>
+          <h2>{{song.song.title}}</h2>
+        </td>
+        <td>
+          <h3>{{song.song.artist}}</h3>
+        </td>
+        <td class="hidden-xs">
+          {{song.song.genre}}
+        </td>
+        <td class="hidden-xs">
+          {{song.song.tempo}}
+        </td>
+      </tr>
+    </thead>
+  </table>
+</div>

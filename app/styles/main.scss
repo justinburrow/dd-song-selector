@@ -18,6 +18,7 @@ body {
   padding: 15px 0;
   vertical-align: middle;
   position: fixed;
+  z-index: 100;
   width: 100%;
   button {
     border-radius: 5px;
@@ -31,12 +32,37 @@ body {
   padding-top: 20px;
 }
 
-.song-list thead td {
-  cursor: pointer;
-  span.glyphicon {
-    top: 3px;
-    left: 3px;
+.filter-sort {
+  position: fixed;
+  z-index: 90;
+  h4 {
+    padding: 8px 0;
+    line-height: 1.4;
+    font-weight: bold;
   }
+  input {
+    border-radius: 3px;
+    padding: 3px;
+    border: 1px solid #999;
+  }
+  .filter {
+    margin-top: 40px;
+  }
+}
+
+.song-list {
+  thead {
+    td {
+      cursor: pointer;
+      span.glyphicon {
+        top: 3px;
+        left: 3px;
+      }
+    }
+  }
+  td {
+    text-transform: capitalize;
+  } 
 }
 
 @media screen and (max-width: 736px) {

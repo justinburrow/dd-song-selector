@@ -5,7 +5,7 @@
             "song": {
               "title": "A Kiss To Build A Dream On",
               "artist": "Louis Armstrong ",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -21,7 +21,7 @@
             "song": {
               "title": "All The Way",
               "artist": "Frank Sinatra",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -29,7 +29,7 @@
             "song": {
               "title": "All of Me",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -45,7 +45,7 @@
             "song": {
               "title": "As Time Goes By",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -53,7 +53,7 @@
             "song": {
               "title": "Autumn In New York",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -61,7 +61,7 @@
             "song": {
               "title": "Autumn Leaves",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -77,7 +77,7 @@
             "song": {
               "title": "Blue Skies",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -125,7 +125,7 @@
             "song": {
               "title": "Embraceable You",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -165,7 +165,7 @@
             "song": {
               "title": "I Could Write A Book",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -173,7 +173,7 @@
             "song": {
               "title": "I Didn't Know What Time It Was",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -189,7 +189,7 @@
             "song": {
               "title": "I’m In The Mood For Love",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -205,7 +205,7 @@
             "song": {
               "title": "I've Got It Bad",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -229,7 +229,7 @@
             "song": {
               "title": "If I Loved You",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -237,7 +237,7 @@
             "song": {
               "title": "In The Wee Small Hours",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -269,7 +269,7 @@
             "song": {
               "title": "Let's Call The Whole Thing Off",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -277,7 +277,7 @@
             "song": {
               "title": "Love For Sale",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -285,7 +285,7 @@
             "song": {
               "title": "Misty",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -294,14 +294,14 @@
               "title": "Moon River",
               "artist": "Andy Williams",
               "genre": "",
-              "tempo": ""
+              "tempo": "Slow"
             }
           },
           {
             "song": {
               "title": "My Favorite Things",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -309,7 +309,7 @@
             "song": {
               "title": "My Foolish Heart",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -317,7 +317,7 @@
             "song": {
               "title": "My Funny Valentine",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -325,7 +325,7 @@
             "song": {
               "title": "Nature Boy",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -333,7 +333,7 @@
             "song": {
               "title": "No More Blues",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -341,7 +341,7 @@
             "song": {
               "title": "One For My Baby",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -349,7 +349,7 @@
             "song": {
               "title": "Prelude To A Kiss",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -357,7 +357,7 @@
             "song": {
               "title": "Pure Imagination",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -365,7 +365,7 @@
             "song": {
               "title": "Rainbow Connection",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -405,7 +405,7 @@
             "song": {
               "title": "Strangers In The Night",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -413,7 +413,7 @@
             "song": {
               "title": "Summer Wind",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -421,7 +421,7 @@
             "song": {
               "title": "Summertime",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -429,7 +429,7 @@
             "song": {
               "title": "The Best Things Happen When You’re Dancing",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -445,7 +445,7 @@
             "song": {
               "title": "The Lady Is A Tramp",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -453,7 +453,7 @@
             "song": {
               "title": "The Look Of Love",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -461,7 +461,7 @@
             "song": {
               "title": "The Very Thought Of You",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -469,7 +469,7 @@
             "song": {
               "title": "The Way We Were",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -493,7 +493,7 @@
             "song": {
               "title": "They Can't Take That Away From Me",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -501,7 +501,7 @@
             "song": {
               "title": "Time After Time",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -517,7 +517,7 @@
             "song": {
               "title": "What Is This Thing Called Love",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -525,7 +525,7 @@
             "song": {
               "title": "When I Fall In Love",
               "artist": "Jazz Standard",
-              "genre": "",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -540,8 +540,8 @@
           {
             "song": {
               "title": "You Go To My Head",
-              "artist": "Jazz Standard\n",
-              "genre": "",
+              "artist": "Jazz Standard",
+              "genre": "Jazz",
               "tempo": ""
             }
           },
@@ -1181,8 +1181,8 @@
             "song": {
               "title": "My Girl",
               "artist": "The Temptations",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Slow"
             }
           },
           {
@@ -1261,16 +1261,16 @@
             "song": {
               "title": "Someday We’ll Be Together",
               "artist": "The Supremes",
-              "genre": "",
-              "tempo": ""
+              "genre": "Girl Group",
+              "tempo": "Slow"
             }
           },
           {
             "song": {
               "title": "Stand By Me",
               "artist": "Ben E King",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Slow"
             }
           },
           {
@@ -1389,8 +1389,8 @@
             "song": {
               "title": "You Really Got A Hold On Me",
               "artist": "Smokey Robinson",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Slow"
             }
           },
           {
@@ -1413,8 +1413,8 @@
             "song": {
               "title": "Ain't No Sunshine",
               "artist": "Bill Withers",
-              "genre": "",
-              "tempo": ""
+              "genre": "Blues",
+              "tempo": "Slow"
             }
           },
           {
@@ -1429,8 +1429,8 @@
             "song": {
               "title": "Ain’t Nobody",
               "artist": "Chaka Khan",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Slow"
             }
           },
           {
@@ -1451,10 +1451,10 @@
           },
           {
             "song": {
-              "title": "All About The Bass",
+              "title": "All About That Bass",
               "artist": "Meghan Trainor",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Fast"
             }
           },
           {
@@ -1499,7 +1499,7 @@
           },
           {
             "song": {
-              "title": "Billy Jean",
+              "title": "Billie Jean",
               "artist": "Michael Jackson",
               "genre": "",
               "tempo": ""
@@ -1525,8 +1525,8 @@
             "song": {
               "title": "Brown Eyed Girl",
               "artist": "Van Morrison",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Slow"
             }
           },
           {
@@ -1629,8 +1629,8 @@
             "song": {
               "title": "Get Lucky",
               "artist": "Daft Punk",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Mid-Tempo"
             }
           },
           {
@@ -1653,8 +1653,8 @@
             "song": {
               "title": "Go Your Own Way",
               "artist": "Fleetwood Mac",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Mid-Tempo"
             }
           },
           {
@@ -1757,8 +1757,8 @@
             "song": {
               "title": "I Heard It Through The Grapevine",
               "artist": "Marvin Gaye",
-              "genre": "",
-              "tempo": ""
+              "genre": "Blues",
+              "tempo": "Slow"
             }
           },
           {
@@ -1781,8 +1781,8 @@
             "song": {
               "title": "I Wanna Be Your Lover",
               "artist": "Prince",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Mid-Tempo"
             }
           },
           {
@@ -1933,8 +1933,8 @@
             "song": {
               "title": "More Than Yesterday",
               "artist": "Spiral Starecase",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Mid-Tempo"
             }
           },
           {
@@ -1949,8 +1949,8 @@
             "song": {
               "title": "PYT",
               "artist": "Michael Jackson",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Mid-Tempo"
             }
           },
           {
@@ -2005,24 +2005,24 @@
             "song": {
               "title": "Rock With You",
               "artist": "Michael Jackson",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Fast"
             }
           },
           {
             "song": {
               "title": "Rock Your Body",
               "artist": "Justin Timberlake",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Fast"
             }
           },
           {
             "song": {
               "title": "Rockin Robin",
               "artist": "Jackson 5",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Fast"
             }
           },
           {
@@ -2053,8 +2053,8 @@
             "song": {
               "title": "Shake It Off",
               "artist": "Taylor Swift",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Mid-Tempo"
             }
           },
           {
@@ -2069,16 +2069,16 @@
             "song": {
               "title": "Stayin Alive",
               "artist": "The Bee Gees",
-              "genre": "",
-              "tempo": ""
+              "genre": "Disco",
+              "tempo": "Mid-Tempo"
             }
           },
           {
             "song": {
               "title": "Stop! In The Name Of Love",
               "artist": "The Supremes",
-              "genre": "",
-              "tempo": ""
+              "genre": "Girl Group",
+              "tempo": "Mid-Tempo"
             }
           },
           {
@@ -2101,16 +2101,16 @@
             "song": {
               "title": "Superstition",
               "artist": "Stevie Wonder",
-              "genre": "",
-              "tempo": ""
+              "genre": "Funk",
+              "tempo": "Mid-Tempo"
             }
           },
           {
             "song": {
               "title": "Sweet Caroline",
               "artist": "Neil Diamond",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Mid-Tempo"
             }
           },
           {
@@ -2173,8 +2173,8 @@
             "song": {
               "title": "Unchain My Heart",
               "artist": "Ray Charles",
-              "genre": "",
-              "tempo": ""
+              "genre": "Blues",
+              "tempo": "Mid-Tempo"
             }
           },
           {
@@ -2195,23 +2195,23 @@
           },
           {
             "song": {
-              "title": "Uptight (Everything's Alright)",
+              "title": "Fasttight (Everything's Alright)",
               "artist": "Stevie Wonder",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Fast"
             }
           },
           {
             "song": {
-              "title": "Uptown Funk",
+              "title": "Fasttown Funk",
               "artist": "Bruno Mars",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Fast"
             }
           },
           {
             "song": {
-              "title": "Uptown Girl",
+              "title": "Fasttown Girl",
               "artist": "Billy Joel",
               "genre": "",
               "tempo": ""
@@ -2237,8 +2237,8 @@
             "song": {
               "title": "We can work it out",
               "artist": "The Beatles",
-              "genre": "",
-              "tempo": ""
+              "genre": "Rock",
+              "tempo": "Fast"
             }
           },
           {
@@ -2277,32 +2277,32 @@
             "song": {
               "title": "You Can't Hurry Love",
               "artist": "The Supremes",
-              "genre": "",
-              "tempo": ""
+              "genre": "Girl Group",
+              "tempo": "Fast"
             }
           },
           {
             "song": {
               "title": "You Keep Me Hangin On",
               "artist": "The Supremes",
-              "genre": "",
-              "tempo": ""
+              "genre": "Girl Group",
+              "tempo": "Fast"
             }
           },
           {
             "song": {
               "title": "You Make My Dreams Come True",
               "artist": "Hall & Oates",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Fast"
             }
           },
           {
             "song": {
               "title": "Your Lips Are Movin'",
               "artist": "Meghan Trainor",
-              "genre": "",
-              "tempo": ""
+              "genre": "Pop",
+              "tempo": "Fast"
             }
           }
         ]
