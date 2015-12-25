@@ -47,7 +47,7 @@
     </thead>
       <tr data-ng-repeat="song in main.songList.songlist.songs | orderBy: main.sortType | filter: searchSongs | inArray:main.genreFilter:'genre' | inArray:main.tempoFilter:'tempo'">
         <td>
-          <input type="checkbox" data-ng-click="main.selectSong(song)">
+          <input type="checkbox" data-ng-model="song.checked" data-ng-click="main.selectSong(song)">
         </td>
         <td>
           <h2>{{song.song.title}}</h2>
