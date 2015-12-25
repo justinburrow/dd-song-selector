@@ -19,7 +19,8 @@
           },
           {
             "song": {
-              "title": "All The Way – Sinatra",
+              "title": "All The Way",
+              "artist": "Frank Sinatra",
               "genre": "",
               "tempo": ""
             }
@@ -66,7 +67,8 @@
           },
           {
             "song": {
-              "title": "Bewitched – Sinatra",
+              "title": "Bewitched",
+              "artist": "Frank Sinatra",
               "genre": "",
               "tempo": ""
             }
@@ -89,14 +91,16 @@
           },
           {
             "song": {
-              "title": "Come Fly With Me – Sinatra",
+              "title": "Come Fly With Me",
+              "artist": "Frank Sinatra",
               "genre": "",
               "tempo": ""
             }
           },
           {
             "song": {
-              "title": "Don't Get Around Much Anymore – Ellington",
+              "title": "Don't Get Around Much Anymore",
+              "artist": "Duke Ellington",
               "genre": "",
               "tempo": ""
             }
@@ -144,7 +148,7 @@
           {
             "song": {
               "title": "Fly Me To The Moon",
-              "artist": "Sinatra",
+              "artist": "Frank Sinatra",
               "genre": "",
               "tempo": ""
             }
@@ -152,7 +156,7 @@
           {
             "song": {
               "title": "For Sentimental Reasons",
-              "artist": "Ella",
+              "artist": "Ella Fitzgerald",
               "genre": "",
               "tempo": ""
             }
@@ -192,7 +196,7 @@
           {
             "song": {
               "title": "I've Got A Crush On You",
-              "artist": "Sinatra",
+              "artist": "Frank Sinatra",
               "genre": "",
               "tempo": ""
             }
@@ -208,7 +212,7 @@
           {
             "song": {
               "title": "I've Got The World On A String",
-              "artist": "Sinatra",
+              "artist": "Frank Sinatra",
               "genre": "",
               "tempo": ""
             }
@@ -216,7 +220,7 @@
           {
             "song": {
               "title": "I've Got You Under My Skin",
-              "artist": "Sinatra",
+              "artist": "Frank Sinatra",
               "genre": "",
               "tempo": ""
             }
@@ -423,7 +427,8 @@
           },
           {
             "song": {
-              "title": "The Best Things Happen When You’re Dancing – Jazz Standard",
+              "title": "The Best Things Happen When You’re Dancing",
+              "artist": "Jazz Standard",
               "genre": "",
               "tempo": ""
             }
@@ -471,7 +476,7 @@
           {
             "song": {
               "title": "The Way You Look Tonight",
-              "artist": "Sinatra",
+              "artist": "Frank Sinatra",
               "genre": "",
               "tempo": ""
             }
@@ -543,7 +548,7 @@
           {
             "song": {
               "title": "You Make Me Feel So Young",
-              "artist": "Sinatra",
+              "artist": "Frank Sinatra",
               "genre": "",
               "tempo": ""
             }
@@ -551,7 +556,7 @@
           {
             "song": {
               "title": "Young At Heart",
-              "artist": "Sinatra",
+              "artist": "Frank Sinatra",
               "genre": "",
               "tempo": ""
             }
@@ -695,7 +700,7 @@
           {
             "song": {
               "title": "Imagine",
-              "artist": "Lennon",
+              "artist": "John Lennon",
               "genre": "",
               "tempo": ""
             }
@@ -743,7 +748,7 @@
           {
             "song": {
               "title": "Let It Be",
-              "artist": "Beatles",
+              "artist": "The Beatles",
               "genre": "",
               "tempo": ""
             }
@@ -751,7 +756,7 @@
           {
             "song": {
               "title": "Love Me Tender",
-              "artist": "Elvis",
+              "artist": "Elvis Presley",
               "genre": "",
               "tempo": ""
             }
@@ -775,7 +780,7 @@
           {
             "song": {
               "title": "Something In The Way She Moves",
-              "artist": "Beatles",
+              "artist": "The Beatles",
               "genre": "",
               "tempo": ""
             }
@@ -791,7 +796,7 @@
           {
             "song": {
               "title": "Tears In Heaven",
-              "artist": "Clapton",
+              "artist": "Eric Clapton",
               "genre": "",
               "tempo": ""
             }
@@ -799,7 +804,7 @@
           {
             "song": {
               "title": "Wonderful Tonight",
-              "artist": "Clapton",
+              "artist": "Eric Clapton",
               "genre": "",
               "tempo": ""
             }
@@ -815,7 +820,7 @@
           {
             "song": {
               "title": "Yesterday",
-              "artist": "Beatles",
+              "artist": "The Beatles",
               "genre": "",
               "tempo": ""
             }
@@ -839,7 +844,7 @@
           {
             "song": {
               "title": "Be My Baby",
-              "artist": "Ronettes",
+              "artist": "The Ronettes",
               "genre": "",
               "tempo": ""
             }
@@ -871,7 +876,7 @@
           {
             "song": {
               "title": "Can't Help Falling In Love With You",
-              "artist": "Elvis",
+              "artist": "Elvis Presley",
               "genre": "",
               "tempo": ""
             }
@@ -895,7 +900,7 @@
           {
             "song": {
               "title": "Come Together",
-              "artist": "Beatles",
+              "artist": "The Beatles",
               "genre": "",
               "tempo": ""
             }
@@ -903,7 +908,7 @@
           {
             "song": {
               "title": "Could It Be I’m Falling In Love",
-              "artist": "Spinners",
+              "artist": "The Spinners",
               "genre": "",
               "tempo": ""
             }
@@ -943,7 +948,7 @@
           {
             "song": {
               "title": "Earth Angel",
-              "artist": "Penguins",
+              "artist": "The Penguins",
               "genre": "",
               "tempo": ""
             }
@@ -951,7 +956,7 @@
           {
             "song": {
               "title": "Easy",
-              "artist": "Commodores",
+              "artist": "The Commodores",
               "genre": "",
               "tempo": ""
             }
@@ -959,7 +964,7 @@
           {
             "song": {
               "title": "Eleanor Rigby",
-              "artist": "Beatles",
+              "artist": "The Beatles",
               "genre": "",
               "tempo": ""
             }
@@ -967,7 +972,7 @@
           {
             "song": {
               "title": "Emotion",
-              "artist": "BeeGees",
+              "artist": "The Bee Gees",
               "genre": "",
               "tempo": ""
             }
@@ -1007,7 +1012,7 @@
           {
             "song": {
               "title": "Hey Jude",
-              "artist": "Beatles",
+              "artist": "The Beatles",
               "genre": "",
               "tempo": ""
             }
@@ -1015,7 +1020,7 @@
           {
             "song": {
               "title": "How Can You Mend A Broken Heart",
-              "artist": "BeeGees",
+              "artist": "The Bee Gees",
               "genre": "",
               "tempo": ""
             }
@@ -1023,7 +1028,7 @@
           {
             "song": {
               "title": "How Deep Is Your Love",
-              "artist": "BeeGees",
+              "artist": "The Bee Gees",
               "genre": "",
               "tempo": ""
             }
@@ -1047,7 +1052,7 @@
           {
             "song": {
               "title": "I Hear A Symphony",
-              "artist": "Supremes",
+              "artist": "The Supremes",
               "genre": "",
               "tempo": ""
             }
@@ -1063,7 +1068,7 @@
           {
             "song": {
               "title": "I Only Have Eyes For You",
-              "artist": "Flamingos",
+              "artist": "The Flamingos",
               "genre": "",
               "tempo": ""
             }
@@ -1087,7 +1092,7 @@
           {
             "song": {
               "title": "Inside And Out",
-              "artist": "BeeGees/Feist",
+              "artist": "The Bee Gees/Feist",
               "genre": "",
               "tempo": ""
             }
@@ -1119,7 +1124,7 @@
           {
             "song": {
               "title": "Layla",
-              "artist": "Clapton",
+              "artist": "Eric Clapton",
               "genre": "",
               "tempo": ""
             }
@@ -1142,7 +1147,7 @@
           },
           {
             "song": {
-              "title": "Love Fool",
+              "title": "Lovefool",
               "artist": "The Cardigans",
               "genre": "",
               "tempo": ""
@@ -1175,7 +1180,7 @@
           {
             "song": {
               "title": "My Girl",
-              "artist": "Temptations",
+              "artist": "The Temptations",
               "genre": "",
               "tempo": ""
             }
@@ -1199,7 +1204,7 @@
           {
             "song": {
               "title": "One Fine Day",
-              "artist": "Chiffons",
+              "artist": "The Chiffons",
               "genre": "",
               "tempo": ""
             }
@@ -1255,7 +1260,7 @@
           {
             "song": {
               "title": "Someday We’ll Be Together",
-              "artist": "Supremes",
+              "artist": "The Supremes",
               "genre": "",
               "tempo": ""
             }
@@ -1319,7 +1324,7 @@
           {
             "song": {
               "title": "What A Wonderful World This Would Be",
-              "artist": "Cooke",
+              "artist": "Sam Cooke",
               "genre": "",
               "tempo": ""
             }
@@ -1351,7 +1356,7 @@
           {
             "song": {
               "title": "Will You Still Love Me Tomorrow",
-              "artist": "Shirelles",
+              "artist": "The Shirelles",
               "genre": "",
               "tempo": ""
             }
@@ -1375,7 +1380,7 @@
           {
             "song": {
               "title": "You Make Me Feel Like A Natural Woman",
-              "artist": "Aretha",
+              "artist": "Aretha Franklin",
               "genre": "",
               "tempo": ""
             }
@@ -1383,7 +1388,7 @@
           {
             "song": {
               "title": "You Really Got A Hold On Me",
-              "artist": "Smokey",
+              "artist": "Smokey Robinson",
               "genre": "",
               "tempo": ""
             }
@@ -1415,7 +1420,7 @@
           {
             "song": {
               "title": "Ain't Too Proud To Beg",
-              "artist": "Temptations",
+              "artist": "The Temptations",
               "genre": "",
               "tempo": ""
             }
@@ -1471,7 +1476,7 @@
           {
             "song": {
               "title": "Baby Love",
-              "artist": "Supremes",
+              "artist": "The Supremes",
               "genre": "",
               "tempo": ""
             }
@@ -1479,7 +1484,7 @@
           {
             "song": {
               "title": "Baby Now That I Found You",
-              "artist": "Foundations",
+              "artist": "The Foundations",
               "genre": "",
               "tempo": ""
             }
@@ -1487,7 +1492,7 @@
           {
             "song": {
               "title": "Bad Moon Rising",
-              "artist": "Creedence",
+              "artist": "Creedence Clearwater Revival",
               "genre": "",
               "tempo": ""
             }
@@ -1511,7 +1516,7 @@
           {
             "song": {
               "title": "Brickhouse",
-              "artist": "Commodores",
+              "artist": "The Commodores",
               "genre": "",
               "tempo": ""
             }
@@ -1527,14 +1532,15 @@
           {
             "song": {
               "title": "Build Me Up Buttercup",
-              "artist": "Foundations",
+              "artist": "The Foundations",
               "genre": "",
               "tempo": ""
             }
           },
           {
             "song": {
-              "title": "Blurred Lines- Robin Thicke",
+              "title": "Blurred Lines",
+              "artist": "Robin Thicke",
               "genre": "",
               "tempo": ""
             }
@@ -1550,7 +1556,7 @@
           {
             "song": {
               "title": "Can't Buy Me Love",
-              "artist": "Beatles",
+              "artist": "The Beatles",
               "genre": "",
               "tempo": ""
             }
@@ -1558,7 +1564,7 @@
           {
             "song": {
               "title": "Can't Hurry Love",
-              "artist": "Supremes",
+              "artist": "The Supremes",
               "genre": "",
               "tempo": ""
             }
@@ -1574,7 +1580,7 @@
           {
             "song": {
               "title": "Chain Of Fools",
-              "artist": "Aretha",
+              "artist": "Aretha Franklin",
               "genre": "",
               "tempo": ""
             }
@@ -1582,7 +1588,7 @@
           {
             "song": {
               "title": "Come See About Me",
-              "artist": "Supremes",
+              "artist": "The Supremes",
               "genre": "",
               "tempo": ""
             }
@@ -1678,7 +1684,7 @@
           {
             "song": {
               "title": "Happy Together",
-              "artist": "Turtles",
+              "artist": "The Turtles",
               "genre": "",
               "tempo": ""
             }
@@ -1686,7 +1692,7 @@
           {
             "song": {
               "title": "He's A Rebel",
-              "artist": "Crystals",
+              "artist": "The Crystals",
               "genre": "",
               "tempo": ""
             }
@@ -1734,7 +1740,7 @@
           {
             "song": {
               "title": "I Can’t Get Next To You",
-              "artist": "Temptations",
+              "artist": "The Temptations",
               "genre": "",
               "tempo": ""
             }
@@ -1750,7 +1756,7 @@
           {
             "song": {
               "title": "I Heard It Through The Grapevine",
-              "artist": "Gaye",
+              "artist": "Marvin Gaye",
               "genre": "",
               "tempo": ""
             }
@@ -1766,7 +1772,7 @@
           {
             "song": {
               "title": "I Second That Emotion",
-              "artist": "Smokey",
+              "artist": "Smokey Robinson",
               "genre": "",
               "tempo": ""
             }
@@ -1790,7 +1796,7 @@
           {
             "song": {
               "title": "I Want To Hold Your Hand",
-              "artist": "Beatles",
+              "artist": "The Beatles",
               "genre": "",
               "tempo": ""
             }
@@ -1910,7 +1916,7 @@
           {
             "song": {
               "title": "Love Me Do",
-              "artist": "Beatles",
+              "artist": "The Beatles",
               "genre": "",
               "tempo": ""
             }
@@ -1950,7 +1956,7 @@
           {
             "song": {
               "title": "Please Mr Postman",
-              "artist": "Marvellettes",
+              "artist": "The Marvelettes",
               "genre": "",
               "tempo": ""
             }
@@ -1982,7 +1988,7 @@
           {
             "song": {
               "title": "Respect",
-              "artist": "Aretha",
+              "artist": "Aretha Franklin",
               "genre": "",
               "tempo": ""
             }
@@ -1990,7 +1996,7 @@
           {
             "song": {
               "title": "Return To Sender",
-              "artist": "Elvis",
+              "artist": "Elvis Presley",
               "genre": "",
               "tempo": ""
             }
@@ -2030,7 +2036,7 @@
           {
             "song": {
               "title": "Save The Last Dance For Me",
-              "artist": "Buble",
+              "artist": "Michael Buble",
               "genre": "",
               "tempo": ""
             }
@@ -2038,7 +2044,7 @@
           {
             "song": {
               "title": "Second That Emotion",
-              "artist": "Smokey",
+              "artist": "Smokey Robinson",
               "genre": "",
               "tempo": ""
             }
@@ -2062,7 +2068,7 @@
           {
             "song": {
               "title": "Stayin Alive",
-              "artist": "BeeGees",
+              "artist": "The Bee Gees",
               "genre": "",
               "tempo": ""
             }
@@ -2070,7 +2076,7 @@
           {
             "song": {
               "title": "Stop! In The Name Of Love",
-              "artist": "Supremes",
+              "artist": "The Supremes",
               "genre": "",
               "tempo": ""
             }
@@ -2086,7 +2092,7 @@
           {
             "song": {
               "title": "Sugar Sugar",
-              "artist": "Archies",
+              "artist": "The Archies",
               "genre": "",
               "tempo": ""
             }
@@ -2118,7 +2124,7 @@
           {
             "song": {
               "title": "Tears Of A Clown",
-              "artist": "Smokey",
+              "artist": "Smokey Robinson",
               "genre": "",
               "tempo": ""
             }
@@ -2134,7 +2140,7 @@
           {
             "song": {
               "title": "The Way You Do The Thing You Do",
-              "artist": "Temptations",
+              "artist": "The Temptations",
               "genre": "",
               "tempo": ""
             }
@@ -2158,7 +2164,7 @@
           {
             "song": {
               "title": "This Old Heart Of Mine",
-              "artist": "Temptations",
+              "artist": "The Temptations",
               "genre": "",
               "tempo": ""
             }
@@ -2174,7 +2180,7 @@
           {
             "song": {
               "title": "Under The Boardwalk",
-              "artist": "Drifters",
+              "artist": "The Drifters",
               "genre": "",
               "tempo": ""
             }
@@ -2230,7 +2236,7 @@
           {
             "song": {
               "title": "We can work it out",
-              "artist": "Beatles",
+              "artist": "The Beatles",
               "genre": "",
               "tempo": ""
             }
@@ -2238,7 +2244,7 @@
           {
             "song": {
               "title": "What a Wonderful World This Would Be",
-              "artist": "Cooke",
+              "artist": "Sam Cooke",
               "genre": "",
               "tempo": ""
             }
@@ -2254,7 +2260,7 @@
           {
             "song": {
               "title": "Where Did Our Love Go",
-              "artist": "Supremes",
+              "artist": "The Supremes",
               "genre": "",
               "tempo": ""
             }
@@ -2262,7 +2268,7 @@
           {
             "song": {
               "title": "Who Wrote the Book of Love",
-              "artist": "Monotones",
+              "artist": "The Monotones",
               "genre": "",
               "tempo": ""
             }
@@ -2270,7 +2276,7 @@
           {
             "song": {
               "title": "You Can't Hurry Love",
-              "artist": "Supremes",
+              "artist": "The Supremes",
               "genre": "",
               "tempo": ""
             }
@@ -2278,7 +2284,7 @@
           {
             "song": {
               "title": "You Keep Me Hangin On",
-              "artist": "Supremes",
+              "artist": "The Supremes",
               "genre": "",
               "tempo": ""
             }
