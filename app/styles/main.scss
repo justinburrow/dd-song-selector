@@ -23,6 +23,12 @@ body {
   h1 {
     float: left;
   }
+  p {
+    float: right;
+    font-size: 14px;
+    line-height: 2.5;
+    font-weight: normal;
+  }
   button {
     border-radius: 5px;
     width: 100%;
@@ -57,7 +63,10 @@ button.dt-review {
     border: 1px solid #999;
   }
   .filter {
-    margin-top: 40px;
+    margin-top: 25px;
+    li {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -76,7 +85,7 @@ button.dt-review {
   } 
 }
 
-input[type=checkbox]:focus, input[type=text]:focus {
+input[type=checkbox]:focus, input[type=text]:focus, button:focus {
   outline: none;
 }
 
@@ -130,6 +139,37 @@ input[type=checkbox]:focus, input[type=text]:focus {
       text-align: center;
     }
   }
+}
+
+//Custom Checkbox Font Icon Replacement
+input[type=checkbox] { 
+  display:none;
+  + label:before {
+    font-family: FontAwesome;
+    font-size: 20px;
+    display: inline-block;
+    content: "\f096";
+    letter-spacing: 10px;
+    cursor: pointer;
+  }
+  &.filter + label:before {
+    content: "\f1db";
+    position: relative;
+    top: 3px;
+  }
+  &:checked + label:before {
+    content: "\f046";
+    letter-spacing: 5px;
+  }
+  &.filter:checked + label:before {
+    content: "\f055";
+    letter-spacing: 10px;
+  }
+}
+
+//Utility Classes
+.display-none {
+  display: none;
 }
 
 

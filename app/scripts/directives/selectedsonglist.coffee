@@ -1,8 +1,8 @@
 'use strict'
 
 angular.module 'ddSongSelectApp'
-  .directive 'selectedSongs', ->
-    restrict: 'E'
+  .directive 'selectedSongList', ->
+    restrict: 'EA'
     link: (scope, element, attrs) ->
       angular.element('html').click (event) ->
         if angular.element(event.target).hasClass('dt-review')

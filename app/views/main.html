@@ -8,13 +8,13 @@
       <h4>Filter by Genre</h4>
       {{main.genreInclude}}
       <ul>
-        <li data-ng-repeat="genre in main.songGenres"><input type="checkbox" data-ng-click="main.clickFilter(genre, 'genre')">{{genre}}</li>
+        <li data-ng-repeat="genre in main.songGenres"><input type="checkbox" id="GenreFilter-{{genre}}" class="filter" data-ng-click="main.clickFilter(genre, 'genre')"><label for="GenreFilter-{{genre}}">{{genre}}</label></li>
       </ul>
     </div>
     <div class="filter">
       <h4>Filter by Tempo</h4>
       <ul>
-        <li data-ng-repeat="tempo in main.songTempos"><input type="checkbox" data-ng-click="main.clickFilter(tempo, 'tempo')">{{tempo}}</li>
+        <li data-ng-repeat="tempo in main.songTempos"><input type="checkbox" id="TempoFilter-{{tempo}}" class="filter" data-ng-click="main.clickFilter(tempo, 'tempo')"><label for="TempoFilter-{{tempo}}">{{tempo}}</label></li>
       </ul>
     </div>
   </div>
@@ -24,22 +24,22 @@
   <table class="table table-striped song-list">
     <thead>
       <tr>
-        <td>
+        <td width="3%">
           <!-- don't delete - spacer for the checkbox column -->
         </td>
-        <td data-ng-click="main.sortType = 'song.title'">
+        <td data-ng-click="main.sortType = 'song.title'" width="50%">
           Title
           <span data-ng-show="main.sortType == 'song.title'" class="glyphicon glyphicon-triangle-bottom"></span>
         </td>
-        <td data-ng-click="main.sortType = 'song.artist'">
+        <td data-ng-click="main.sortType = 'song.artist'" width="27%">
           Artist
           <span data-ng-show="main.sortType == 'song.artist'" class="glyphicon glyphicon-triangle-bottom"></span>
         </td>
-        <td class="hidden-xs" data-ng-click="main.sortType = 'song.genre'">
+        <td class="hidden-xs" data-ng-click="main.sortType = 'song.genre'" width="10%">
           Genre
           <span data-ng-show="main.sortType == 'song.genre'" class="glyphicon glyphicon-triangle-bottom"></span>
         </td>
-        <td class="hidden-xs" data-ng-click="main.sortType = 'song.tempo'">
+        <td class="hidden-xs" data-ng-click="main.sortType = 'song.tempo'" width="10%">
           Tempo
           <span data-ng-show="main.sortType == 'song.tempo'" class="glyphicon glyphicon-triangle-bottom"></span>
         </td>
@@ -47,7 +47,8 @@
     </thead>
       <tr data-ng-repeat="song in main.songList.songlist.songs | orderBy: main.sortType | filter: searchSongs | inArray:main.genreFilter:'genre' | inArray:main.tempoFilter:'tempo'">
         <td>
-          <input type="checkbox" data-ng-model="song.checked" data-ng-click="main.selectSong(song)">
+          <input type="checkbox" id="{{song.song.title}}" data-ng-model="song.checked" data-ng-click="main.selectSong(song)">
+          <label for="{{song.song.title}}"><span class="display-none">{{song.song.title}}</span></label>
         </td>
         <td>
           <h2>{{song.song.title}}</h2>
@@ -66,8 +67,8 @@
   </table>
 </div>
 
-<selected-songs class="selected-songs">
+<div class="selected-songs">
   <ul>
     <li data-ng-repeat="song in main.selectedSongs">{{song.title}}</li>
   </ul>
-</selected-songs>
+</div>

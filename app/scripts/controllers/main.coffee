@@ -9,7 +9,7 @@ angular.module 'ddSongSelectApp'
     vm.genreFilter = []
     vm.tempoFilter = []
     vm.selectedSongs = []
-    
+        
     #Get JSON data, setup arrays to build filters from key values
     $http.get('songs/songs.json').success (data) ->
       vm.songList = data
