@@ -82,6 +82,7 @@ button.dt-review {
   }
   td {
     text-transform: capitalize;
+    vertical-align: middle !important;
   } 
 }
 
@@ -114,6 +115,33 @@ input[type=checkbox]:focus, input[type=text]:focus, button:focus {
   }
 }
 
+//Custom Checkbox Font Icon Replacement
+input[type=checkbox] { 
+  display:none;
+  + label:before {
+    font-family: FontAwesome;
+    font-size: 20px;
+    display: inline-block;
+    content: "\f096";
+    letter-spacing: 10px;
+    cursor: pointer;
+  }
+  &.filter + label:before {
+    content: "\f1db";
+    position: relative;
+    top: 3px;
+  }
+  &:checked + label:before {
+    content: "\f046";
+    letter-spacing: 5px;
+  }
+  &.filter:checked + label:before {
+    content: "\f055";
+    letter-spacing: 10px;
+  }
+}
+
+
 @media screen and (max-width: 736px) {
   .container {
     padding: 0 2%;
@@ -141,6 +169,12 @@ input[type=checkbox]:focus, input[type=text]:focus, button:focus {
       width: 58%;
       display: inline-block;
       text-align: center;
+    }
+  }
+  input[type=checkbox] { 
+    + label:before {
+      font-size: 28px;
+      line-height: 1;
     }
   }
   .filter-col {
@@ -173,31 +207,6 @@ input[type=checkbox]:focus, input[type=text]:focus, button:focus {
   }
 }
 
-//Custom Checkbox Font Icon Replacement
-input[type=checkbox] { 
-  display:none;
-  + label:before {
-    font-family: FontAwesome;
-    font-size: 20px;
-    display: inline-block;
-    content: "\f096";
-    letter-spacing: 10px;
-    cursor: pointer;
-  }
-  &.filter + label:before {
-    content: "\f1db";
-    position: relative;
-    top: 3px;
-  }
-  &:checked + label:before {
-    content: "\f046";
-    letter-spacing: 5px;
-  }
-  &.filter:checked + label:before {
-    content: "\f055";
-    letter-spacing: 10px;
-  }
-}
 
 //Utility Classes
 .display-none {
