@@ -31,6 +31,8 @@ angular.module 'ddSongSelectApp'
         if tempo && vm.songTempos.indexOf(tempo) == -1
           vm.songTempos.push(tempo)
         i++
+      
+      vm.allSongsTotal = vm.songList.songlist.songs.length
 
 
     #Grab the filtering type and push it to the appropriate array

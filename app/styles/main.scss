@@ -70,6 +70,20 @@ button.dt-review {
   }
 }
 
+.filter-list {
+  font-size: 12px;
+  margin-bottom: 15px;
+  .items {
+    text-transform: capitalize;
+    &:after {
+      content: ', '
+    }
+    &:last-child:after {
+      content: '';
+    }
+  }
+}
+
 .song-list {
   thead {
     td {
