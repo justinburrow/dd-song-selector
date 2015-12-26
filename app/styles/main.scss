@@ -143,6 +143,26 @@ input[type=checkbox]:focus, input[type=text]:focus, button:focus {
       text-align: center;
     }
   }
+  .filter-col {
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    transition: width 0.2s ease-out, padding 0.1s ease-out;
+    padding: 0;
+    overflow: hidden;
+    z-index: 200;
+    color: white;
+    &.expand {
+      width: 80%;
+      padding: 20px;
+      transition: width 0.2s ease-out, padding 0.1s ease-out;
+    }
+    .filter-sort {
+      position: relative;
+    }
+  }
   td.checked {
     width: 16%;
   }
