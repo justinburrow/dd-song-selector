@@ -1,9 +1,9 @@
 <div class="col-sm-3 filter-col" data-ng-class="{'expand': optionOpen}">
   <span class="closer visible-xs" data-ng-click="main.closer()"><i class="fa fa-times"></i></span>
   <div class="filter-sort">
-    <h4>Narrow The List</h4>
+    <h4>Search for songs</h4>
     <div class="search">
-      <input type="text" value="" placeholder="Search..." ng-model="searchSongs">
+      <input type="text" value="" placeholder="Song or Artist Name" ng-model="searchSongs">
     </div>
     <div class="filter">
       <h4>Filter by Genre</h4>
@@ -21,7 +21,7 @@
   </div>
 </div>
 
-<div class="col-sm-9 col-sm-offset-3 col-xs-12">
+<div class="col-sm-9 col-sm-offset-3 col-xs-12" data-ng-class="{'fixed': optionOpen || reviewOpen}">
   <table class="table table-striped song-list">
     <thead>
       <tr>
