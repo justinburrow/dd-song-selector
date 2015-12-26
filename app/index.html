@@ -19,15 +19,15 @@
     <div class="header" selected-song-list>
       <div class="container">
         <div class="button visible-xs">
-          <button class="" aria-label="filtering options" data-ng-click="optionOpen = !optionOpen">
+          <button class="" aria-label="filtering options" data-ng-click="optionOpen = !optionOpen; reviewOpen = false">
             <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
           </button>
         </div>
         <h1>Dallas &amp; Doll</h1>
         <p class="direction hidden-xs" data-ng-if="!main.selectedSongs.length">Choose songs to add them to your list</p>
-        <button class="hidden-xs dt-review" data-ng-click="reviewOpen = !reviewOpen;" data-ng-show="main.selectedSongs.length">Review My Song List</button>
+        <button class="hidden-xs dt-review" data-ng-click="reviewOpen = !reviewOpen; optionOpen = !optionOpen;" data-ng-show="main.selectedSongs.length">Review My Song List</button>
         <div class="button visible-xs">
-          <button class="" aria-label="review song selection" data-ng-click="reviewOpen = !reviewOpen">
+          <button class="" aria-label="review song selection" data-ng-show="main.selectedSongs.length" data-ng-click="reviewOpen = !reviewOpen; optionOpen = false">
             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
           </button>
         </div>
