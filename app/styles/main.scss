@@ -95,11 +95,14 @@ input[type=checkbox]:focus, input[type=text]:focus, button:focus {
   z-index: 200;
   top: 0;
   right: 0;
-  width: 0;
   height: 100%;
+  width: 80%;
+  padding: 50px;
   background: rgba(0,0,0,0.6);
   color: white;
-  transition: width 0.2s ease-out, padding 0.1s ease-out;
+  transform: scaleX(0.00001);
+  transform-origin: 100% 50%;
+  transition: transform 0.3s ease-in-out;
   li {
     font-weight: bold;
     margin-bottom: 10px;
@@ -109,10 +112,18 @@ input[type=checkbox]:focus, input[type=text]:focus, button:focus {
   }
   &.expand {
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
-    width: 80%;
-    transition: width 0.2s ease-out;
-    padding: 50px;
+    transform: scaleX(1);
+    transition: transform 0.3s ease-in-out;
   }
+}
+
+.closer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
 }
 
 //Custom Checkbox Font Icon Replacement
@@ -178,20 +189,22 @@ input[type=checkbox] {
     }
   }
   .filter-col {
-    width: 0;
     position: fixed;
     top: 0;
     left: 0;
     background: rgba(0,0,0,0.7);
-    transition: width 0.2s ease-out, padding 0.1s ease-out;
-    padding: 0;
+    width: 80%;
+    padding: 20px;
     overflow: hidden;
     z-index: 200;
     color: white;
+    transform: scaleX(0.00001);
+    transform-origin: 0 50%;
+    transition: transform 0.3s ease-in-out;
     &.expand {
-      width: 80%;
-      padding: 20px;
-      transition: width 0.2s ease-out, padding 0.1s ease-out;
+      box-shadow: 0 0 30px rgba(0,0,0,0.5);
+      transform: scalex(1);
+      transition: transform 0.3s ease-in-out;
     }
     .filter-sort {
       position: relative;

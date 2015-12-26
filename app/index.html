@@ -16,18 +16,18 @@
   </head>
   <body data-ng-app="ddSongSelectApp" data-ng-controller="MainCtrl as main">
     
-    <div class="header">
+    <div class="header" selected-song-list>
       <div class="container">
         <div class="button visible-xs">
-          <button class="mb-options" aria-label="filtering options">
+          <button class="" aria-label="filtering options" data-ng-click="optionOpen = !optionOpen">
             <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
           </button>
         </div>
         <h1>Dallas &amp; Doll</h1>
         <p class="direction hidden-xs" data-ng-if="!main.selectedSongs.length">Choose songs to add them to your list</p>
-        <button class="dt-review hidden-xs" selected-song-list data-ng-show="main.selectedSongs.length">Review My Song List</button>
+        <button class="hidden-xs dt-review" data-ng-click="reviewOpen = !reviewOpen;" data-ng-show="main.selectedSongs.length">Review My Song List</button>
         <div class="button visible-xs">
-          <button class="mb-review" aria-label="review song selection">
+          <button class="" aria-label="review song selection" data-ng-click="reviewOpen = !reviewOpen">
             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
           </button>
         </div>

@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module 'ddSongSelectApp'
-  .controller 'MainCtrl', ($http) ->
+  .controller 'MainCtrl', ($http, $scope) ->
     
     vm = @
     vm.sortType = 'song.title'
@@ -61,4 +61,11 @@ angular.module 'ddSongSelectApp'
         i++
       -1
     
+    
+    vm.closer = ->
+      console.log 'i want to close everything'
+      $scope.reviewOpen = false
+      $scope.optionOpen = false
+      
+      
     return
