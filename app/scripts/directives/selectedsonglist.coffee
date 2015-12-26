@@ -5,7 +5,8 @@ angular.module 'ddSongSelectApp'
     restrict: 'EA'
     link: (scope, element, attrs) ->
       angular.element('html').click (event) ->
-        if angular.element(event.target).hasClass('dt-review')
+        console.log angular.element(event.target).classList()
+        if angular.element(event.target).hasClass('mb-review')
           angular.element('.selected-songs').toggleClass('expand')
           return
         else if angular.element('.selected-songs').hasClass('expand') && !angular.element(event.target).closest('.selected-songs').length
