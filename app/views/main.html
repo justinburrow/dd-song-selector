@@ -24,22 +24,23 @@
   <table class="table table-striped song-list">
     <thead>
       <tr>
-        <td width="3%">
-          <!-- don't delete - spacer for the checkbox column -->
+        <td data-ng-click="main.sortType = 'checked'" width="6%">
+          <i class="fa fa-check"></i>
+          <span data-ng-show="main.sortType == 'checked'" class="glyphicon glyphicon-triangle-bottom"></span>
         </td>
-        <td data-ng-click="main.sortType = 'song.title'" width="50%">
+        <td data-ng-click="main.sortType = 'song.title'" width="44%">
           Title
           <span data-ng-show="main.sortType == 'song.title'" class="glyphicon glyphicon-triangle-bottom"></span>
         </td>
-        <td data-ng-click="main.sortType = 'song.artist'" width="27%">
+        <td data-ng-click="main.sortType = 'song.artist'" width="26%">
           Artist
           <span data-ng-show="main.sortType == 'song.artist'" class="glyphicon glyphicon-triangle-bottom"></span>
         </td>
-        <td class="hidden-xs" data-ng-click="main.sortType = 'song.genre'" width="10%">
+        <td class="hidden-xs" data-ng-click="main.sortType = 'song.genre'" width="12%">
           Genre
           <span data-ng-show="main.sortType == 'song.genre'" class="glyphicon glyphicon-triangle-bottom"></span>
         </td>
-        <td class="hidden-xs" data-ng-click="main.sortType = 'song.tempo'" width="10%">
+        <td class="hidden-xs" data-ng-click="main.sortType = 'song.tempo'" width="12%">
           Tempo
           <span data-ng-show="main.sortType == 'song.tempo'" class="glyphicon glyphicon-triangle-bottom"></span>
         </td>
