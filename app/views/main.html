@@ -22,13 +22,13 @@
 </div>
 
 <div class="col-sm-9 col-sm-offset-3 col-xs-12">
-  <p class="filter-list">Viewing {{filteredSongs.length}} of {{main.allSongsTotal}} songs <span ng-if="filteredSongs.length < main.allSongsTotal">in "<span class="items" data-ng-if="searchSongs">Search: {{searchSongs}}</span><span class="items" data-ng-repeat="genre in main.genreFilter">{{genre}}</span><span class="items" data-ng-repeat="tempo in main.tempoFilter">{{tempo}}</span>"</span></p>
+  <p class="filter-list">Viewing <span class="bold">{{filteredSongs.length}}</span> of <span class="bold">{{main.allSongsTotal}}</span> songs <span ng-if="filteredSongs.length < main.allSongsTotal">in "<span class="items" data-ng-if="searchSongs">Search: {{searchSongs}}</span><span class="items" data-ng-repeat="genre in main.genreFilter">{{genre}}</span><span class="items" data-ng-repeat="tempo in main.tempoFilter">{{tempo}}</span>"</span></p>
   <table class="table table-striped song-list">
     <thead>
       <tr>
-        <td class="checked" data-ng-click="main.sortType = 'checked'" width="6%">
+        <td class="checked" data-ng-click="main.sortType = '-checked'" width="6%">
           <i class="fa fa-check"></i>
-          <span data-ng-show="main.sortType == 'checked'" class="glyphicon glyphicon-triangle-bottom"></span>
+          <span data-ng-show="main.sortType == '-checked'" class="glyphicon glyphicon-triangle-bottom"></span>
         </td>
         <td data-ng-click="main.sortType = 'song.title'" width="44%">
           Title
@@ -48,7 +48,7 @@
         </td>
       </tr>
     </thead>
-      <tr data-ng-repeat="song in (filteredSongs = (main.songList.songlist.songs | orderBy: main.sortType | filter: searchSongs | inArray:main.genreFilter:'genre' | inArray:main.tempoFilter:'tempo'))">
+      <tr data-ng-repeat="song in (filteredSongs = (main.songList.songlist.songs | orderBy: main.sortType | filter: searchSongs | inArray:main.genreFilter:'genre' | inArray:main.tempoFilter:'tempo'))" data-ng-init="song.checked=false">
         <td>
           <input type="checkbox" id="{{song.song.title}}" data-ng-model="song.checked" data-ng-click="main.selectSong(song)">
           <label for="{{song.song.title}}"><span class="display-none">{{song.song.title}}</span></label>
