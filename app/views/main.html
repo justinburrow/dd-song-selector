@@ -21,7 +21,7 @@
   </div>
 </div>
 
-<div class="col-sm-9 col-sm-offset-3 col-xs-12" data-ng-class="{'fixed': optionOpen || reviewOpen}">
+<div class="col-sm-9 col-sm-offset-3 col-xs-12">
   <p class="filter-list">Viewing {{filteredSongs.length}} of {{main.allSongsTotal}} songs <span ng-if="filteredSongs.length < main.allSongsTotal">in "<span class="items" data-ng-if="searchSongs">Search: {{searchSongs}}</span><span class="items" data-ng-repeat="genre in main.genreFilter">{{genre}}</span><span class="items" data-ng-repeat="tempo in main.tempoFilter">{{tempo}}</span>"</span></p>
   <table class="table table-striped song-list">
     <thead>

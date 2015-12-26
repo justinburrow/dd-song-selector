@@ -250,8 +250,8 @@ input[type=checkbox] {
 }
 
 .fixed {
-  position: fixed;
-  padding-right: 15px;
+  overflow: hidden;
+  /*padding-right: 15px;*/
 }
 
 
