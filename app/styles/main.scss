@@ -143,6 +143,14 @@ input[type=checkbox]:focus, input[type=text]:focus, button:focus {
       text-align: center;
     }
   }
+  td.checked {
+    width: 16%;
+  }
+  .selected-songs {
+    &.expand {
+      padding: 20px;
+    }
+  }
 }
 
 //Custom Checkbox Font Icon Replacement
