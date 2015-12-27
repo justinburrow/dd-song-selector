@@ -63,11 +63,9 @@ angular.module 'ddSongSelectApp'
         i++
       -1
     
-    
+    #Close panels when clicked
     vm.closer = ->
-      console.log 'i want to close everything'
       $scope.reviewOpen = false
       $scope.optionOpen = false
-      
-      
+  
     return
