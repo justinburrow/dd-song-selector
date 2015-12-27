@@ -304,11 +304,12 @@ input[type=checkbox] {
     overflow: scroll;
     max-height: 100%;
   }
-  .selected-songs .selector-holder:first-of-type {
+  .selected-songs .selector-holder:first-of-type, .selected-songs .selector-holder {
     padding: 0;
     width: 100%;
+    margin-bottom: 40px;
     h4 {
-      font-size: 25px;
+      font-size: 20px;
     }
     .tempo h5 {
       font-size: 15px;
