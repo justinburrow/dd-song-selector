@@ -63,9 +63,18 @@ angular.module 'ddSongSelectApp'
         i++
       -1
     
-    #Close panels when clicked
+    #Close panels when clicked, preserve window scroll Y position (real hacky)
     vm.closer = ->
       $scope.reviewOpen = false
       $scope.optionOpen = false
-  
+      angular.element('body').removeClass('fixed')
+      if window.innerWidth < 768
+        window.scrollTo(0, $scope.topShim)
+      return
+      
+    vm.topShim = ->
+      $scope.topShim = window.pageYOffset
+      angular.element('body').addClass('fixed').css('top', -$scope.topShim-25)
+      return
+        
     return

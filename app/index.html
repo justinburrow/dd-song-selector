@@ -14,20 +14,20 @@
     <!-- endbuild -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
-  <body data-ng-app="ddSongSelectApp" data-ng-controller="MainCtrl as main" data-ng-class="{'fixed': optionOpen || reviewOpen}">
+  <body data-ng-app="ddSongSelectApp" data-ng-controller="MainCtrl as main">
     
     <div class="header" selected-song-list>
       <div class="container">
         <div class="button visible-xs">
-          <button class="" aria-label="filtering options" data-ng-click="optionOpen = !optionOpen; reviewOpen = false">
+          <button class="" aria-label="filtering options" data-ng-click="optionOpen = !optionOpen; reviewOpen = false; main.topShim()">
             <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
           </button>
         </div>
-        <h1>Dallas &amp; Doll</h1>
+        <h1>Dallas &amp; Doll <span class="hidden-xs normal lowercase">- tell us what to play! </h1>
         <p class="direction hidden-xs" data-ng-if="!main.selectedSongs.length">Choose songs to add them to your list</p>
         <button class="hidden-xs dt-review" data-ng-click="reviewOpen = !reviewOpen; optionOpen = !optionOpen" data-ng-show="main.selectedSongs.length">Review My Song List</button>
         <div class="button visible-xs">
-          <button class="" aria-label="review song selection" data-ng-show="main.selectedSongs.length" data-ng-click="reviewOpen = !reviewOpen; optionOpen = false">
+          <button class="" aria-label="review song selection" data-ng-class="{'disabled': !main.selectedSongs.length}" data-ng-disabled="!main.selectedSongs.length" data-ng-click="reviewOpen = !reviewOpen; optionOpen = false; main.topShim()">
             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
           </button>
         </div>

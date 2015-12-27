@@ -72,7 +72,24 @@
 
 <div class="selected-songs" data-ng-class="{'expand': reviewOpen}">
   <span class="closer" data-ng-click="main.closer()"><i class="fa fa-times"></i></span>
-  <ul>
-    <li data-ng-repeat="song in main.selectedSongs">{{song.title}}</li>
-  </ul>
+  <div class="selected-holder">
+    <div class="selector-holder">
+      <h4>Your song list</h4>
+      <ul class="tempo">
+        <li data-ng-repeat="tempo in main.songTempos | orderBy: tempo">
+          <h5>{{tempo}}</h5>
+          <ul class="songs">
+            <li data-ng-repeat="song in (filteredTempo = (main.selectedSongs | filter:{tempo:tempo}))"><span class="bold">{{song.title}}</span> - {{song.artist}}</li>
+            <li ng-if="!filteredTempo.length">No <span class="lowercase">{{tempo}}</span> songs selected</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="selector-holder hidden-xs">
+      <h4>Send us your songs</h4>
+      <input type="text" name="name" value="" placeholder="Name" data-ng-model="send.name" required>
+      <input type="email" name="email" value="" placeholder="Email" data-ng-model="send.email" required>
+      <button type="button" name="button" data-ng-class="{'disabled': !send.name || !send.email}" data-ng-disabled="!send.name && !send.email">All Finished!</button>
+    </div>
+  </div>
 </div>

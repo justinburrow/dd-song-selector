@@ -11,5 +11,5 @@ angular.module 'ddSongSelectApp'
     restrict: 'A'
     link: (scope, element, attrs) ->
 
-      headerHeight = angular.element('.header').outerHeight() + 20;
-      element.css('padding-top', headerHeight)
+      scope.headerHeight = angular.element('.header').outerHeight() + 20;
+      element.css('padding-top', scope.headerHeight)
