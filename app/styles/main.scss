@@ -194,7 +194,7 @@ input[type=checkbox]:focus, input[type=text]:focus, button:focus {
 }
 
 .success {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -204,7 +204,7 @@ input[type=checkbox]:focus, input[type=text]:focus, button:focus {
   text-align: center;
   background: rgba(0,0,0,0.9);
   color: white;
-  padding-top: 10%;
+  padding-top: 15%;
   opacity: 0;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   h6 {
@@ -353,6 +353,10 @@ input[type=checkbox] {
     .songs li {
       font-size: 14px;
     }
+  }
+  .help {
+    font-size: 12px;
+    margin: -10px 0 20px 0;
   }
 }
 
