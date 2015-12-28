@@ -4,13 +4,14 @@ angular.module 'ddSongSelectApp'
   .controller 'MainCtrl', ($http, $scope) ->
     
     vm = @
+    window.MAIN = @
     vm.sortType = 'song.title'
     vm.searchQuery = 'default'
     vm.genreFilter = []
     vm.tempoFilter = []
     vm.selectedSongs = []
     vm.send = {}
-        
+
     #Get JSON data, setup arrays to build filters from key values
     $http.get('songs/songs.json').success (data) ->
       vm.songList = data
@@ -68,6 +69,7 @@ angular.module 'ddSongSelectApp'
     vm.closer = ->
       $scope.reviewOpen = false
       $scope.optionOpen = false
+      $scope.showThanks = false
       angular.element('body').removeClass('fixed')
       if window.innerWidth < 768
         window.scrollTo(0, $scope.topShim)
@@ -85,8 +87,15 @@ angular.module 'ddSongSelectApp'
         client: vm.send
       response = $http.post('scripts/mailer.php', data)
       response.success (data, status, headers, config) ->
-        console.log data
-        console.log status
-        console.log 'it worked'
+        vm.success()
+    
+    vm.success = ->
+      $scope.reviewOpen = false
+      $scope.optionOpen = false
+      $scope.showThanks = true
+      vm.selectedSongs = []
+      vm.send = {}
+      angular.element('body').addClass('fixed')
+      return
         
     return
