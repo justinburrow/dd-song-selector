@@ -95,7 +95,11 @@ angular.module 'ddSongSelectApp'
       $scope.showThanks = true
       vm.selectedSongs = []
       vm.send = {}
+      i = 0
+      while i < vm.filteredSongs.length
+        vm.filteredSongs[i].checked = false
+        i++
       angular.element('body').addClass('fixed')
       return
-        
+      
     return

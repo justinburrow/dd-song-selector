@@ -22,7 +22,7 @@
 </div>
 
 <div class="col-sm-9 col-sm-offset-3 col-xs-12">
-  <p class="filter-list">Viewing <span class="bold">{{vm.filteredSongs.length}}</span> of <span class="bold">{{main.allSongsTotal}}</span> songs <span ng-if="vm.filteredSongs.length < main.allSongsTotal">in "<span class="items" data-ng-if="searchSongs">Search: {{searchSongs}}</span><span class="items" data-ng-repeat="genre in main.genreFilter">{{genre}}</span><span class="items" data-ng-repeat="tempo in main.tempoFilter">{{tempo}}</span>"</span></p>
+  <p class="filter-list">Viewing <span class="bold">{{main.filteredSongs.length}}</span> of <span class="bold">{{main.allSongsTotal}}</span> songs <span ng-if="main.filteredSongs.length < main.allSongsTotal">in "<span class="items" data-ng-if="searchSongs">Search: {{searchSongs}}</span><span class="items" data-ng-repeat="genre in main.genreFilter">{{genre}}</span><span class="items" data-ng-repeat="tempo in main.tempoFilter">{{tempo}}</span>"</span></p>
   <table class="table table-striped song-list">
     <thead>
       <tr>
@@ -48,7 +48,7 @@
         </td>
       </tr>
     </thead>
-      <tr data-ng-repeat="song in vm.filteredSongs = (main.songList.songlist.songs | orderBy: main.sortType | filter: searchSongs | inArray:main.genreFilter:'genre' | inArray:main.tempoFilter:'tempo')" data-ng-init="song.checked=false">
+      <tr data-ng-repeat="song in main.filteredSongs = (main.songList.songlist.songs | orderBy: main.sortType | filter: searchSongs | inArray:main.genreFilter:'genre' | inArray:main.tempoFilter:'tempo')" data-ng-init="song.checked=false">
         <td>
           <input type="checkbox" id="{{song.song.title}}" data-ng-model="song.checked" data-ng-click="main.selectSong(song)">
           <label for="{{song.song.title}}"><span class="display-none">{{song.song.title}}</span></label>
