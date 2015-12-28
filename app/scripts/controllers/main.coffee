@@ -9,6 +9,7 @@ angular.module 'ddSongSelectApp'
     vm.genreFilter = []
     vm.tempoFilter = []
     vm.selectedSongs = []
+    vm.send = {}
         
     #Get JSON data, setup arrays to build filters from key values
     $http.get('songs/songs.json').success (data) ->
@@ -76,5 +77,16 @@ angular.module 'ddSongSelectApp'
       $scope.topShim = window.pageYOffset
       angular.element('body').addClass('fixed').css('top', -$scope.topShim-25)
       return
+    
+    #Send off data to PHP mailer
+    vm.submitter = ->
+      data = 
+        songs: vm.selectedSongs
+        client: vm.send
+      response = $http.post('scripts/mailer.php', data)
+      response.success (data, status, headers, config) ->
+        console.log data
+        console.log status
+        console.log 'it worked'
         
     return

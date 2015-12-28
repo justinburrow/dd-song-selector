@@ -87,9 +87,9 @@
     </div>
     <div class="selector-holder">
       <h4>Send us your songs</h4>
-      <input type="text" name="name" value="" placeholder="Name" data-ng-model="send.name" required>
-      <input type="email" name="email" value="" placeholder="Email" data-ng-model="send.email" required>
-      <button type="button" name="button" data-ng-class="{'disabled': !send.name || !send.email}" data-ng-disabled="!send.name && !send.email">All Finished!</button>
+      <input type="text" name="name" value="" placeholder="Name" data-ng-model="main.send.name" required>
+      <input type="email" name="email" value="" placeholder="Email" data-ng-model="main.send.email" required>
+      <button type="button" name="button" data-ng-class="{'disabled': !main.send.name || !main.send.email}" data-ng-disabled="!main.send.name && !main.send.email" data-ng-click="main.submitter()">All Finished!</button>
     </div>
   </div>
 </div>
